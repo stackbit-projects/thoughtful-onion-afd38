@@ -1,0 +1,59 @@
+stackbitVersion: ~0.3.0
+ssgName: jekyll
+publishDir: _site
+dataDir: _data
+pagesDir: ''
+models:
+  post:
+    type: page
+    label: Post
+    folder: source/_posts
+    match: '*'
+    fields:
+      - type: string
+        name: layout
+        label: Layout
+      - type: string
+        name: title
+        label: Title
+      - type: string
+        name: description
+        label: Description
+      - type: datetime
+        name: date
+        label: Date
+      - type: boolean
+        name: comments
+        label: Comments
+      - type: string
+        name: keywords
+        label: Keywords
+      - type: string
+        name: category
+        label: Category
+      - type: list
+        name: tags
+        label: Tags
+        items:
+          type: string
+      - type: string
+        name: categories
+        label: Categories
+      - type: image
+        name: image
+        label: Image
+  source:
+    type: page
+    label: Source
+    folder: source
+    match: '*'
+    fields:
+      - type: string
+        name: layout
+        label: Layout
+      - type: string
+        name: title
+        label: Title
+      - type: string
+        name: permalink
+        label: Permalink
